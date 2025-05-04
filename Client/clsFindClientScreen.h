@@ -8,6 +8,12 @@ class clsFindClientScreen :protected clsScreen
 public:
     static void FindClient()
     {
+
+        if (!CheckAccessRights(clsUser::enPermissions::pFindClient))
+        {
+            return;
+        }
+
         system("cls");
         _DrawScreenHeader("\t\tFind Client");
         string AccountNumber = "";

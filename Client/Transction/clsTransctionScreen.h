@@ -84,6 +84,12 @@ private:
 public:
     static void ShowTransctionMenue()
     {
+
+        if (!CheckAccessRights(clsUser::enPermissions::pTranactions))
+        {
+            return;
+        }
+
         system("cls");
         cout << setw(37) << left << "" << "===========================================\n";
         cout << setw(37) << left << "" << "\tTransction Menue\n";

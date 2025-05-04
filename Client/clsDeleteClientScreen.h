@@ -9,6 +9,12 @@ public:
 
     static void DeleteClient()
     {
+
+        if (!CheckAccessRights(clsUser::enPermissions::pDeleteClient))
+        {
+            return;
+        }
+
         system("cls");
         _DrawScreenHeader("\t\tDelete Client");
         string AccountNumber = "";
