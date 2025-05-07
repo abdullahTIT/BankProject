@@ -12,7 +12,7 @@ private:
     string _LastName;
     string _Email;
     string _Phone;
-
+    
 public:
  
     clsPerson( string FirstName, string LastName, string Email, string Phone)

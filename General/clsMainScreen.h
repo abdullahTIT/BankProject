@@ -11,6 +11,7 @@
 #include "clsTransctionScreen.h"
 #include "clsMangeUserScreen.h"
 #include "Global.h"
+
 using namespace std;
 
 class clsMainScreen :protected clsScreen
